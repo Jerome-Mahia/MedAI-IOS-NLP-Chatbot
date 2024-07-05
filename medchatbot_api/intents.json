@@ -9,7 +9,7 @@
             {
              "tag":"greetings",
              "patterns": ["hello","hey","hi","good day","greetings","what's up?","how is it going"],
-             "responses":["hello","hey!","what can i do for you?"]
+             "responses":["hello, what can i do for you?"]
             },
             {
              "tag":"goodbye",
@@ -24,11 +24,26 @@
             {
              "tag":"name",
              "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
-             "responses":["you can call me Medibot!","i am Medibot!","i am your digital medical assistant"]
+             "responses":["i am Medibot, your digital medical assistant"]
+            },
+            {
+              "tag": "unwell",
+              "patterns": [
+                "What are your symptoms?",
+                "Can you describe your symptoms?",
+                "Tell me about your symptoms.",
+                "What symptoms are you experiencing?",
+                "I am unwell",
+                "I feel sick",
+                "I'm not feeling well",
+                "I am feeling ill"
+              ],
+              "responses": ["Could you share more details about how you're feeling?"]
             },
             {
              "tag":"common cold symptoms",
-             "patterns": ["Runny or stuffy nose",
+             "patterns": [
+              "Runny or stuffy nose",
              "Sore throat",
              "Cough",
              "Congestion",
@@ -39,16 +54,33 @@
              "responses":["It seems that you are suffering from common cold"]
             },
             {
-             "tag":"fever symptoms",
-             "patterns":["Sweating",
-             "Chills and shivering",
-             "Headache",
-             "Muscle aches",
-             "Loss of appetite",
-             "Irritability",
-             "Dehydration",
-             "General weakness"],
-             "responses":["It seems that you are suffering from fever"]
+              "tag": "malaria symptoms",
+              "patterns": [
+                "Fever",
+                "Chills",
+                "Vomiting",
+                "Nausea",
+                "Muscle pain",
+                "Fatigue",
+                "Headache",
+                "Diarrhea",
+                "Bloody stools"
+              ],
+              "responses": ["It seems that you might be suffering from malaria. Please consult a healthcare provider."]
+            },
+            {
+              "tag": "arthritis symptoms",
+              "patterns": [
+                "Joint pain",
+                "Stiffness",
+                "Swelling",
+                "Redness around the joint",
+                "Decreased range of motion",
+                "Fatigue",
+                "Fever",
+                "Weight loss"
+              ],
+              "responses": ["It seems that you might be experiencing symptoms of arthritis. It's important to consult a healthcare professional for an accurate diagnosis."]
             },
             {
              "tag":"Diabetes symptoms",
@@ -87,11 +119,6 @@
              "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
             },
             {
-             "tag":"fever prevention",
-             "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
-             "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
-            },
-            {
              "tag":"diabetes prevention",
              "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
              "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
@@ -107,6 +134,61 @@
              "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
             },
             {
+              "tag": "arthritis prevention",
+              "patterns": [
+                  "How can I prevent arthritis?",
+                  "What can I do to avoid getting arthritis?",
+                  "Tell me some prevention methods for arthritis",
+                  "What should I do to keep from getting arthritis?",
+                  "Can you give me tips to prevent arthritis?"
+              ],
+              "responses": [
+                  "To prevent arthritis, maintain a healthy weight, stay physically active, avoid joint injuries, eat a balanced diet rich in omega-3 fatty acids, and avoid smoking. Regular exercise and stretching can also help keep your joints healthy."
+              ]
+          },
+          {
+            "tag": "malaria prevention",
+            "patterns": [
+                "What can I do to prevent malaria?",
+                "How can I avoid getting malaria?",
+                "What are some prevention methods for malaria?",
+                "Tell me how to protect myself from malaria",
+                "What should I take to prevent malaria?"
+            ],
+            "responses": [
+                "To prevent malaria, you can use mosquito repellent, sleep under insecticide-treated nets, and take antimalarial medications like chloroquine, doxycycline, or mefloquine. Avoiding mosquito bites is crucial, so wear long sleeves and pants, especially at night."
+                ]
+            },
+            {
+              "tag": "malaria medicines",
+              "patterns": [
+                  "I have malaria",
+                  "What medicines should I take for malaria?",
+                  "Can you recommend some medications for malaria?",
+                  "What drugs are used to treat malaria?",
+                  "Tell me the medicines for malaria",
+                  "What should I take if I have malaria?"
+              ],
+              "responses": [
+                  "For treating malaria, the commonly prescribed medicines include artemisinin-based combination therapies (ACTs) such as artemether-lumefantrine, artesunate-amodiaquine, and dihydroartemisinin-piperaquine. Other medications like chloroquine, hydroxychloroquine, and mefloquine may also be used depending on the type and severity of malaria."
+              ]
+          },
+          {
+              "tag": "arthritis medicines",
+              "patterns": [
+                  "I have arthritis",
+                  "What medicines should I take for arthritis?",
+                  "Can you recommend some medications for arthritis?",
+                  "What drugs are used to treat arthritis?",
+                  "Tell me the medicines for arthritis",
+                  "What should I take if I have arthritis?"
+              ],
+              "responses": [
+                  "For treating arthritis, common medications include nonsteroidal anti-inflammatory drugs (NSAIDs) like ibuprofen and naproxen, corticosteroids such as prednisone, disease-modifying antirheumatic drugs (DMARDs) like methotrexate and hydroxychloroquine, and biologics such as etanercept and infliximab. Consult a healthcare professional for the most appropriate treatment for your specific condition."
+              ]
+          },
+      
+            {
              "tag":"Consultation",
              "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
              "responses":["You can contact various doctors here for any kind of consultation: 1. https://afyabora.co.ke, 2. https://blissmedicalcentre.com/doctor-consultation, 3. https://www.icliniq.com/en/doctors-by-country/ke/kenya, or you can pay a visit to your local area doctor or family doctor."]
@@ -114,11 +196,6 @@
             {
                 "tag": "Allergies",
                 "patterns": [
-                  "What should I do if I have allergies?",
-                  "Can you recommend any allergy medicines?",
-                  "What are the common medicines for allergies?",
-                  "How can I treat my allergies?",
-                  "What to take for severe allergies?",
                   "I'm allergic to penicillin, what can I take?",
                   "What if I'm allergic to a specific medicine?"
                 ],
@@ -133,6 +210,7 @@
                 "tag": "MedicineAvailability",
                 "patterns": [
                   "Where can I get my medicine?",
+                  "Where can I get the medicine?",
                   "How can I buy medicine?",
                   "Can you suggest where to buy medicine?",
                   "I need to refill my prescription, where can I go?",
