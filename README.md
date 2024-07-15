@@ -119,7 +119,7 @@ Home Screen             |  Chat History Screen
 ![Home Screen](Home-Screen.png) |  ![Chat History Screen](Chat-History-Screen.png)
 
 Chat Interface Screen           |  Chat Interface with clickable links
-:-------------------------:|:-------------------------:
+:---------------------------------:|:-------------------------:
 ![Chat Interface](Chat-Interface.png)  |  ![Chat Interface with clickable links](Chat-Interface-with-Links.png)
 
 ---
