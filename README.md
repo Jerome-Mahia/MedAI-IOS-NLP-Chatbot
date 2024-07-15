@@ -114,14 +114,14 @@ We welcome contributions to enhance MedAI. Please follow these steps:
 
 ## Screenshots
 
-![Home Screen](Home-Screen.png)
+Home Screen             |  Chat History Screen
+:-------------------------:|:-------------------------:
+![Home Screen](Home-Screen.png) |  ![Chat History Screen](Chat-History-Screen.png)
 
-![Chat History Screen](Chat-History-Screen.png)
-
-![Chat Interface](Chat-Interface.png)
-
-![Chat Interface with clickable links](Chat-Interface-with-Links.png)
+Chat Interface Screen           |  Chat Interface with clickable links
+:-------------------------:|:-------------------------:
+![Chat Interface](Chat-Interface.png)  |  ![Chat Interface with clickable links](Chat-Interface-with-Links.png)
 
 ---
 
-Thank you for using MedAI.
+Thank you.
