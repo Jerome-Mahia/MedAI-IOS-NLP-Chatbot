@@ -1,0 +1,1 @@
+const String appUrl = "https://entirely-bursting-crayfish.ngrok-free.app/chat";
